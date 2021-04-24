@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {ColorsTheme} from '../theme/color';
 
-const ButtonComp = props => {
+const Button = props => {
   return (
     <TouchableOpacity {...props}>
       <View style={styles.button(props.type, props.mt)}>
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   }),
 });
 
-export default ButtonComp;
+export default Button;

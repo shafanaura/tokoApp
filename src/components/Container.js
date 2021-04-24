@@ -1,17 +1,21 @@
 import React from 'react';
-import {View, Text, ScrollView, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {ColorsTheme} from '../theme/color';
 
-const ContainerComp = props => {
+const Container = props => {
   return (
     <View style={styles.container}>
-      <View style={styles.space}>
-        {props.title && <Text style={styles.fontHead}>{props.title}</Text>}
-        {props.subtitle && (
-          <Text style={styles.fontsubtitle}>{props.subtitle}</Text>
-        )}
+      <View style={[styles.row, styles.space]}>
+        <View>{props.go}</View>
+        <View>
+          {props.title && <Text style={styles.fontHead}>{props.title}</Text>}
+          {props.subtitle && (
+            <Text style={styles.fontsubtitle}>{props.subtitle}</Text>
+          )}
+        </View>
+        <View style={{flex: 1}}>{props.search}</View>
       </View>
-      <View style={[styles.card, styles.space]}>{props.children}</View>
+      {props.children}
     </View>
   );
 };
@@ -41,6 +45,10 @@ const styles = StyleSheet.create({
     color: 'white',
     fontFamily: 'Poppins-Regular',
   },
+  row: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
 });
 
-export default ContainerComp;
+export default Container;

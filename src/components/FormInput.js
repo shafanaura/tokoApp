@@ -8,7 +8,7 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
-export default class TextInputComp extends Component {
+export default class FormInput extends Component {
   constructor(props) {
     super(props);
     this.state = {

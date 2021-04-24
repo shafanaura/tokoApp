@@ -6,9 +6,10 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import ButtonComp from '../components/ButtonComp';
-import ContainerComp from '../components/ContainerComp';
-import TextInputComp from '../components/TextInputComp';
+import Button from '../components/Button';
+import Container from '../components/Container';
+import CardPage from '../components/CardPage';
+import FormInput from '../components/FormInput';
 import {ColorsTheme} from '../theme/color';
 
 export class LoginScreen extends Component {
@@ -17,22 +18,25 @@ export class LoginScreen extends Component {
   };
   render() {
     return (
-      <React.Fragment>
-        <ContainerComp
-          title="Welcome to"
-          subtitle="Masukkan email dan password">
+      <Container head title="Welcome to" subtitle="Masukkan email dan password">
+        <CardPage>
           <ScrollView showsVerticalScrollIndicator={false}>
-            <TextInputComp
+            <FormInput
               keyboardType="email-address"
               title="Email"
-              placeholder="Enter your email"
+              placeholder="Masukkan email"
             />
-            <TextInputComp
+            <FormInput
               title="Password"
-              placeholder="Enter your password"
+              placeholder="Masukkan password"
               password
             />
-            <ButtonComp title="Masuk" type="success" mt={20} />
+            <Button
+              onPress={() => this.props.navigation.navigate('product-screen')}
+              title="Masuk"
+              type="success"
+              mt={20}
+            />
             <View
               style={{
                 alignItems: 'center',
@@ -46,14 +50,14 @@ export class LoginScreen extends Component {
                 alignItems: 'center',
                 justifyContent: 'center',
               }}>
-              <Text style={styles.descGray}>Masuk dengan </Text>
+              <Text style={styles.descGray}>Belum punya akun? </Text>
               <TouchableOpacity onPress={this.gotoRegist}>
-                <Text style={styles.desc}>nomor telepon</Text>
+                <Text style={styles.desc}>Buat akun</Text>
               </TouchableOpacity>
             </View>
           </ScrollView>
-        </ContainerComp>
-      </React.Fragment>
+        </CardPage>
+      </Container>
     );
   }
 }
