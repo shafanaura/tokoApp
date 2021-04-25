@@ -1,12 +1,12 @@
 import React from 'react';
 import {Dimensions} from 'react-native';
 import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
-import Products from '../containers/Products';
-import Warung from '../containers/Warung';
+import ProductScreen from '../screens/ProductScreen';
+import WarungScreen from '../screens/WarungScreen';
 
-const FirstRoute = () => <Products />;
+const FirstRoute = () => <ProductScreen />;
 
-const SecondRoute = () => <Warung />;
+const SecondRoute = () => <WarungScreen />;
 
 const initialLayout = {width: Dimensions.get('window').width};
 

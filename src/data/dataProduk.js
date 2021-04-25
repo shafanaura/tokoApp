@@ -5,11 +5,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 0,
   },
   {
@@ -18,11 +20,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 1,
   },
   {
@@ -31,11 +35,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 0,
   },
   {
@@ -44,11 +50,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 0,
   },
   {
@@ -57,11 +65,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 1,
   },
   {
@@ -70,11 +80,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 0,
   },
   {
@@ -83,11 +95,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 1,
   },
   {
@@ -96,11 +110,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 0,
   },
   {
@@ -109,11 +125,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 1,
   },
   {
@@ -122,11 +140,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 1,
   },
   {
@@ -135,11 +155,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 1,
   },
   {
@@ -148,11 +170,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 0,
   },
   {
@@ -161,11 +185,13 @@ const dataProduk = [
     produk: 'Telur Ayam',
     gambar:
       'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
+    warung:
+      'https://kabarlokal.id/wallpaper/wallpaper/20230329/Download-Gratis-gambar-tempat-buah-di-warung-Wallpaper-HD-warung-itu-usaha-semua-kalangan-ara-preview.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
-    alamat: 'Jl. Java, Bekasi',
+    alamat: 'Jl. Java Hore, Bekasi',
     pemilik: 'Dian Arshih',
-    jarak: 4,
-    star: 5,
+    jarak: 4.3,
+    star: 4.8,
     status: 1,
   },
 ];

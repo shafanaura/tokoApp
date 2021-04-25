@@ -32,7 +32,7 @@ export class LoginScreen extends Component {
               password
             />
             <Button
-              onPress={() => this.props.navigation.navigate('product-screen')}
+              onPress={() => this.props.navigation.navigate('home-screen')}
               title="Masuk"
               type="success"
               mt={20}
