@@ -1,8 +1,10 @@
-const produk = [
+const dataProduk = [
   {
     id: 1,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -14,6 +16,8 @@ const produk = [
     id: 2,
     name: 'Yond kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -25,6 +29,8 @@ const produk = [
     id: 3,
     name: 'Yond kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -36,6 +42,8 @@ const produk = [
     id: 4,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -47,6 +55,8 @@ const produk = [
     id: 5,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -58,6 +68,8 @@ const produk = [
     id: 6,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -69,6 +81,8 @@ const produk = [
     id: 7,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -80,6 +94,8 @@ const produk = [
     id: 8,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -91,6 +107,8 @@ const produk = [
     id: 9,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -102,6 +120,8 @@ const produk = [
     id: 10,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -113,6 +133,8 @@ const produk = [
     id: 11,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -124,6 +146,8 @@ const produk = [
     id: 12,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -135,6 +159,8 @@ const produk = [
     id: 13,
     name: 'Aini kitchen',
     produk: 'Telur Ayam',
+    gambar:
+      'https://asset.kompas.com/crops/WYVtX9H9wYlXZDwLmMqHiw2ZJc4=/0x7:740x500/750x500/data/photo/2020/11/13/5fae4aae98da3.jpg',
     keterangan: 'Menyediakan kebutuhan sehari-hari',
     alamat: 'Jl. Java, Bekasi',
     pemilik: 'Dian Arshih',
@@ -144,4 +170,4 @@ const produk = [
   },
 ];
 
-export default produk;
+export default dataProduk;

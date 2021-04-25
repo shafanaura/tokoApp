@@ -2,12 +2,12 @@ import React from 'react';
 import {View, Text, TextInput, StyleSheet} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
-const SearchInput = () => {
+const SearchInput = props => {
   return (
     <React.Fragment>
       <View style={styles.container}>
         <Icon name="search" size={24} color="#A9A9A9" style={styles.icon} />
-        <TextInput style={styles.input} />
+        <TextInput style={styles.input} {...props} />
       </View>
     </React.Fragment>
   );

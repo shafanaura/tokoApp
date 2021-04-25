@@ -21,7 +21,7 @@ export class ProductScreen extends Component {
               />
             </TouchableOpacity>
           }
-          search={<SearchInput />}>
+          search={<SearchInput placeholder="search" />}>
           <CardPage nospace>
             <Tab />
           </CardPage>

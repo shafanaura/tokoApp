@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import {FlatList, StyleSheet, Text, View} from 'react-native';
-import produk from '../data/produk';
+// import produk from '../data/produk';
 
 export class Warung extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <FlatList
+        {/* <FlatList
           data={produk}
           renderItem={({item}) => <Text>{item.name}</Text>}
-        />
+        /> */}
       </View>
     );
   }
