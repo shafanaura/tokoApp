@@ -51,7 +51,6 @@ export default class FormInput extends Component {
 const styles = StyleSheet.create({
   form: {
     marginTop: 5,
-    marginBottom: 20,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#ECF5F8',
