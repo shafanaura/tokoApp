@@ -60,10 +60,7 @@ export class RegisterScreen extends Component {
   };
   render() {
     return (
-      <Container
-        head
-        title="Buat Akun TokoKu"
-        subtitle="Masukkan email dan password">
+      <Container head title="Buat Akun TokoKu" subtitle="Isi data diri">
         <CardPage>
           <ScrollView showsVerticalScrollIndicator={false}>
             <Formik

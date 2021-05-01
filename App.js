@@ -5,9 +5,13 @@ import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import persistedStore from './src/redux/store';
 import FlashMessage from 'react-native-flash-message';
+import SplashScreen from 'react-native-splash-screen';
 
 const {store, persistor} = persistedStore();
 export class App extends Component {
+  componentDidMount() {
+    SplashScreen.hide();
+  }
   render() {
     return (
       <Provider store={store}>
