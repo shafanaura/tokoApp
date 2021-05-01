@@ -10,8 +10,8 @@ export class AppNavigator extends Component {
   render() {
     return (
       <Stack.Navigator headerMode="none">
-        {/* <Stack.Screen name="login-screen" component={LoginScreen} />
-        <Stack.Screen name="register-screen" component={RegisterScreen} /> */}
+        <Stack.Screen name="login-screen" component={LoginScreen} />
+        <Stack.Screen name="register-screen" component={RegisterScreen} />
         <Stack.Screen name="home-screen" component={TabScreen} />
       </Stack.Navigator>
     );

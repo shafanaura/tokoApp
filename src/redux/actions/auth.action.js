@@ -23,11 +23,12 @@ export const login = (email, password) => {
   };
 };
 
-export const register = (email, password) => {
+export const register = (email, password, nama) => {
   return async dispatch => {
     const params = new URLSearchParams();
     params.append('email', email);
     params.append('password', password);
+    params.append('nama', nama);
     try {
       const response = await http().post('auth/register', params);
       dispatch({

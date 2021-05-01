@@ -32,7 +32,7 @@ export class WarungScreen extends Component {
           </View>
           <View style={styles.row}>
             <IconAwesome style={styles.icon} name="user" />
-            <Text style={styles.alamat}>{item.id_pemilik}</Text>
+            <Text style={styles.alamat}>{item.nama_pemilik}</Text>
           </View>
           <View style={styles.rowFlex}>
             <View style={styles.row}>

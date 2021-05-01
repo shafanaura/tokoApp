@@ -19,6 +19,10 @@ import {showMessage} from 'react-native-flash-message';
 import {connect} from 'react-redux';
 
 const Validation = yup.object().shape({
+  nama: yup
+    .string()
+    .min(4, ({min}) => `Name must be at least ${min} characters`)
+    .required('Email is required'),
   email: yup
     .string()
     .email('Please enter valid email')
@@ -36,7 +40,7 @@ export class RegisterScreen extends Component {
   };
   isRegist = async values => {
     this.setState({loading: true});
-    await this.props.register(values.email, values.password);
+    await this.props.register(values.email, values.password, values.nama);
     if (this.props.auth.errorMsg === '') {
       showMessage({
         message: this.props.auth.message,
@@ -65,7 +69,7 @@ export class RegisterScreen extends Component {
             <Formik
               validateOnMount={true}
               validationSchema={Validation}
-              initialValues={{email: '', password: ''}}
+              initialValues={{email: '', password: '', nama: ''}}
               onSubmit={values => this.isRegist(values)}>
               {({
                 handleChange,
@@ -76,6 +80,18 @@ export class RegisterScreen extends Component {
                 touched,
               }) => (
                 <>
+                  <FormInput
+                    title="Nama"
+                    placeholder="Masukkan Nama"
+                    name="nama"
+                    onChangeText={handleChange('nama')}
+                    onBlur={handleBlur('nama')}
+                    value={values.nama}
+                  />
+                  {errors.nama && touched.nama && (
+                    <Text style={styles.errText}>{errors.nama}</Text>
+                  )}
+                  <View style={styles.gap} />
                   <FormInput
                     keyboardType="email-address"
                     title="Email"
