@@ -12,6 +12,6 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     SplashScreen.show(this);
-    return "foodApp";
+    return "TokoKu";
   }
 }
