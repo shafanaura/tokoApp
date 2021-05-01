@@ -7,38 +7,46 @@ import {
   Dimensions,
   TouchableOpacity,
   ImageBackground,
+  ActivityIndicator,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import dataProduk from '../data/dataProduk';
+import {connect} from 'react-redux';
 import {ColorsTheme} from '../theme/color';
+import {produkData} from '../redux/actions/produk.action';
+import {warungData} from '../redux/actions/warung.action';
 
 const numColumns = 2;
 const WIDTH = Dimensions.get('window').width;
 export class ProductScreen extends Component {
-  formatData = (dataProduk, numColumns) => {
-    const totalRows = Math.floor(dataProduk.length / numColumns);
-    let totalLastRow = dataProduk.length - totalRows * numColumns;
+  componentDidMount() {
+    this.props.produkData(this.props.auth.token);
+  }
+
+  formatData = (detail, numColumns) => {
+    const totalRows = Math.floor(detail.length / numColumns);
+    let totalLastRow = detail.length - totalRows * numColumns;
 
     while (totalLastRow !== 0 && totalLastRow !== numColumns) {
-      dataProduk.push({key: 'blank', empty: true});
+      detail.push({key: 'blank', empty: true});
       totalLastRow++;
     }
-    return dataProduk;
+    return detail;
   };
 
   _renderItem = ({item, index}) => {
     if (item.empty) {
-      return <View style={[styles.card, styles.itemVisible]} />;
+      return <View />;
     }
+
     return (
       <TouchableOpacity style={styles.card}>
         <ImageBackground
-          source={{uri: item.gambar}}
+          source={{uri: item.picture}}
           style={styles.thumbnail}
           blurRadius={2}
           borderTopRightRadius={8}
           borderTopLeftRadius={8}>
-          <Text style={styles.textMakanan}>{item.produk}</Text>
+          <Text style={styles.textMakanan}>{item.nama_produk}</Text>
         </ImageBackground>
         <View style={styles.content}>
           <View style={styles.row}>
@@ -54,20 +62,27 @@ export class ProductScreen extends Component {
               size={16}
               style={{marginRight: 10}}
             />
-            <Text style={styles.name}>Warung {item.name}</Text>
+            <Text style={styles.name}>Warung {item.nama_warung}</Text>
           </View>
         </View>
       </TouchableOpacity>
     );
   };
   render() {
+    const {data} = this.props.produk;
     return (
-      <FlatList
-        data={this.formatData(dataProduk, numColumns)}
-        numColumns={numColumns}
-        renderItem={this._renderItem}
-        keyExtractor={item => item.id}
-      />
+      <React.Fragment>
+        {data.length > 0 ? (
+          <FlatList
+            data={this.formatData(data, numColumns)}
+            numColumns={numColumns}
+            renderItem={this._renderItem}
+            keyExtractor={item => item.id}
+          />
+        ) : (
+          <Text style={styles.unavailable}>Produk tidak ada</Text>
+        )}
+      </React.Fragment>
     );
   }
 }
@@ -124,6 +139,20 @@ const styles = StyleSheet.create({
     color: ColorsTheme.placeholder,
     flex: 1,
   },
+  unavailable: {
+    fontFamily: 'Poppins-Regular',
+    color: ColorsTheme.placeholder,
+    fontSize: 18,
+    textAlign: 'center',
+    marginTop: 10,
+  },
 });
 
-export default ProductScreen;
+const mapStateToProps = state => ({
+  auth: state.auth,
+  produk: state.produk,
+});
+
+const mapDispatchToProps = {produkData, warungData};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProductScreen);

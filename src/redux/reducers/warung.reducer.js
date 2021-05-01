@@ -1,4 +1,5 @@
 const initialState = {
+  data: {},
   detail: {},
   errorMsg: '',
   message: '',
@@ -6,14 +7,21 @@ const initialState = {
 
 const warungReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'DETAIL_USER': {
+    case 'DATA_WARUNG': {
+      return {
+        ...state,
+        data: action.payload,
+        message: action.message,
+      };
+    }
+    case 'DETAIL_WARUNG': {
       return {
         ...state,
         detail: action.payload,
         message: action.message,
       };
     }
-    case 'SET_USER_MESSAGE': {
+    case 'SET_WARUNG_MESSAGE': {
       return {
         ...state,
         errorMsg: action.payload,

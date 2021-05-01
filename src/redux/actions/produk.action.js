@@ -1,11 +1,13 @@
 import http from '../../helpers/http';
 
-export const produkDetail = token => {
+export const produkData = (token, search) => {
   return async dispatch => {
     try {
-      const response = await http(token).get('produk');
+      const response = await http(token).get(
+        `produk?search=${search ? search : ''}`,
+      );
       dispatch({
-        type: 'DETAIL_PRODUK',
+        type: 'DATA_PRODUK',
         payload: response.data.results,
         message: response.data.message,
       });

@@ -1,15 +1,15 @@
 const initialState = {
-  detail: {},
+  data: [],
   errorMsg: '',
   message: '',
 };
 
 const produkReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'DETAIL_PRODUK': {
+    case 'DATA_PRODUK': {
       return {
         ...state,
-        detail: action.payload,
+        data: action.payload,
         message: action.message,
       };
     }

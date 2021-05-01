@@ -2,10 +2,14 @@ import React, {Component} from 'react';
 import {FlatList, ImageBackground, StyleSheet, Text, View} from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 import IconAwesome from 'react-native-vector-icons/FontAwesome';
-import dataProduk from '../data/dataProduk';
+import {connect} from 'react-redux';
 import {ColorsTheme} from '../theme/color';
+import {warungData} from '../redux/actions/warung.action';
 
 export class WarungScreen extends Component {
+  componentDidMount() {
+    this.props.warungData(this.props.auth.token);
+  }
   _renderItem = ({item, index}) => {
     if (item.empty) {
       return <View />;
@@ -13,22 +17,22 @@ export class WarungScreen extends Component {
     return (
       <View style={styles.rowCard}>
         <ImageBackground
-          source={{uri: item.warung}}
+          source={{uri: item.picture}}
           style={styles.img}
           blurRadius={2}
           borderRadius={8}>
           <Icon name="heart" style={styles.iconHeart} />
         </ImageBackground>
         <View style={styles.content}>
-          <Text style={styles.warung}>Warung {item.name}</Text>
-          <Text style={styles.keterangan}>{item.keterangan}</Text>
+          <Text style={styles.warung}>Warung {item.nama_warung}</Text>
+          <Text style={styles.keterangan}>{item.deskripsi}</Text>
           <View style={styles.row}>
             <IconAwesome style={styles.icon} name="map-marker" />
             <Text style={styles.alamat}>{item.alamat}</Text>
           </View>
           <View style={styles.row}>
             <IconAwesome style={styles.icon} name="user" />
-            <Text style={styles.alamat}>{item.pemilik}</Text>
+            <Text style={styles.alamat}>{item.id_pemilik}</Text>
           </View>
           <View style={styles.rowFlex}>
             <View style={styles.row}>
@@ -48,13 +52,18 @@ export class WarungScreen extends Component {
     );
   };
   render() {
+    const {data} = this.props.warung;
     return (
       <View style={styles.container}>
-        <FlatList
-          data={dataProduk}
-          keyExtractor={item => item.id}
-          renderItem={this._renderItem}
-        />
+        {data.length > 0 ? (
+          <FlatList
+            data={data}
+            keyExtractor={item => item.id}
+            renderItem={this._renderItem}
+          />
+        ) : (
+          <Text style={styles.unavailable}>Warung tidak ada</Text>
+        )}
       </View>
     );
   }
@@ -134,6 +143,19 @@ const styles = StyleSheet.create({
     color: ColorsTheme.body,
     fontSize: 12,
   },
+  unavailable: {
+    fontFamily: 'Poppins-Regular',
+    color: ColorsTheme.placeholder,
+    fontSize: 18,
+    textAlign: 'center',
+  },
 });
 
-export default WarungScreen;
+const mapStateToProps = state => ({
+  auth: state.auth,
+  warung: state.warung,
+});
+
+const mapDispatchToProps = {warungData};
+
+export default connect(mapStateToProps, mapDispatchToProps)(WarungScreen);
